@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Weather forecast</string>
+    <string name="get_location">Get Location</string>
+    <string name="get_temperature">Get Temperature</string>
+    <string name="enter_city_name">Enter City name</string>
+    <string name="weather_forecast">Weather forecast</string>
+    <string name="current_location_weather">Current Location Weather</string>
+    <string name="todo">TODO</string>
+    <string name="get_weather">Get Weather</string>
+    <string name="source_openweathermap_org">Source: openweathermap.org</string>
+</resources>

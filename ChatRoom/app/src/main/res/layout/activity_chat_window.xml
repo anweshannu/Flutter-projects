@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ChatWindow">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="657dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="151dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/crete_round"
+            android:paddingBottom="0dp"
+            android:text="@string/chat_room"
+            android:textAlignment="center"
+            android:textColor="#2C0404"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+        <TextView
+            android:id="@+id/activeuserstextView"
+            android:layout_width="140dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/averia_gruesa_libre"
+            android:text="@string/active_users"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/activeUsersTextView"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back"
+            android:hint="@string/no_one_is_online"
+            android:textColor="#549A02"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="116dp" />
+
+        <TextView
+            android:id="@+id/chatBoxTextView"
+            android:layout_width="330dp"
+            android:layout_height="446dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:hint="@string/no_new_messages"
+            android:textColor="#050505"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <LinearLayout
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="291dp"
+                android:layout_height="38dp"
+                android:autofillHints=""
+                android:background="@drawable/back"
+                android:hint="@string/type_a_message" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="37dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:background="@mipmap/send_icon"
+                android:textColorHint="#2B2323"
+                tools:layout_editor_absoluteX="331dp"
+                tools:layout_editor_absoluteY="612dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#F4E9E9"
+            android:text="@string/sign_out"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
