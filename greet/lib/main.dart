@@ -32,9 +32,8 @@ class _MyApp extends State<MyApp> {
         print(minuteController.text);
         secondController.text = DateTimeFormat.format(dateTime, format: "s");
         ampmController.text = DateTimeFormat.format(dateTime, format: "A");
-        dateController.text = DateTimeFormat.format(dateTime,format: AmericanDateFormats.abbrDayOfWeekAbbr);
-
-
+        dateController.text = DateTimeFormat.format(dateTime,
+            format: AmericanDateFormats.abbrDayOfWeekAbbr);
       });
     });
   }
@@ -131,7 +130,8 @@ class _MyApp extends State<MyApp> {
                                 ),
                               ),
                             ],
-                          ), Container(
+                          ),
+                          Container(
                             padding: const EdgeInsets.fromLTRB(5, 0, 60, 0),
                             child: Text(
                               dateController.text,
