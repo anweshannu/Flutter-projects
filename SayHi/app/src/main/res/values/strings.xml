@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">SayHi</string>
-    <string name="greet">Greet</string>
-    <string name="greetings">Greetings</string>
-    <string name="enter_your_name">Enter your name</string>
-</resources>
